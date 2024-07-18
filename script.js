@@ -43,3 +43,15 @@ window.onscroll = () => {
     let footer = document.querySelector('footer');
     footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.documentElement.offsetHeight);
 }
+
+document.getElementById('downloadCvButton').addEventListener('click', function () {
+    const cvUrl = './CV.pdf'; // Replace with the actual URL of your CV
+    const link = document.createElement('a');
+    link.href = cvUrl;
+    link.target = '_blank';
+    link.download = 'My_CV.pdf'; // You can set the file name here
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+  
