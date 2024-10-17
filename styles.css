@@ -122,8 +122,12 @@ span{
                 0 0 50px var(--main-color),
                 0 0 100px var(--main-color);
 }
-.home-content p{
+
+p{
     font-size: 1.8rem;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;
